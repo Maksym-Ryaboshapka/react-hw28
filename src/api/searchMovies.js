@@ -1,5 +1,5 @@
-const getTrending = async () => {
-  const url = "https://api.themoviedb.org/3/trending/movie/day?language=en-US";
+const searchMovies = async (keyword) => {
+  const url = `https://api.themoviedb.org/3/search/movie?query=${keyword}&language=en-US&page=1`;
   const options = {
     method: "GET",
     headers: {
@@ -13,8 +13,8 @@ const getTrending = async () => {
     const res = await fetch(url, options);
     return await res.json();
   } catch (err) {
-    return console.error(err);
+    return console.log(err);
   }
 };
 
-export default getTrending;
+export default searchMovies;
