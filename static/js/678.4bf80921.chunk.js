@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkreact_hw25=self.webpackChunkreact_hw25||[]).push([[678],{678:(e,s,r)=>{r.r(s),r.d(s,{default:()=>i});var t,c=r(948),l=r(528);const n=r(464).Ay.nav(t||(t=(0,l.A)(["\n  display: flex;\n  gap: 20px;\n"])));var a=r(579);const i=()=>(0,a.jsxs)(n,{children:[(0,a.jsx)(c.k2,{to:"/",style:e=>{let{isActive:s}=e;return{color:s?"red":"black"}},children:"Home"}),(0,a.jsx)(c.k2,{to:"/movies",style:e=>{let{isActive:s}=e;return{color:s?"red":"black"}},children:"Movies"})]})}}]);
+//# sourceMappingURL=678.4bf80921.chunk.js.map
