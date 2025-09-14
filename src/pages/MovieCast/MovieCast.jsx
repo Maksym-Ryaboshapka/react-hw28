@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import getGenres from "../../api/getGenres";
 import getCast from "../../api/getCast";
-import MovieDesc from "../../components/MovieDesc/MovieDesc";
+// import MovieDesc from "../../components/MovieDesc/MovieDesc";
 import Cast from "./Cast/Cast";
 
 const MovieCast = () => {
@@ -41,7 +41,6 @@ const MovieCast = () => {
 
   return (
     <>
-      <MovieDesc movie={movie} genres={genresMap} />
       <hr />
       {cast.map((c) => {
         if (c) {

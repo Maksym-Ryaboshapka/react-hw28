@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import getGenres from "../../api/getGenres";
 import getReviews from "../../api/getReviews";
-import MovieDesc from "../../components/MovieDesc/MovieDesc";
+// import MovieDesc from "../../components/MovieDesc/MovieDesc";
 import Review from "./Review/Review";
 
 const MovieReviews = () => {
@@ -41,7 +41,6 @@ const MovieReviews = () => {
 
   return (
     <>
-      <MovieDesc movie={movie} genres={genresMap} />
       <>
         {reviews.length > 0 ? (reviews.map((r) => {
           return <Review author={r.author} content={r.content} key={r.id} />
